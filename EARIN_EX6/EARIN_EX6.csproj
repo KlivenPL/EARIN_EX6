@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+    <PackageId>Arcene</PackageId>
+    <Authors>Oskar Hacel Marcin Lisowski</Authors>
+    <Product>Arcene</Product>
+    <AssemblyName>arcene</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+    <PackageReference Include="Microsoft.ML" Version="1.5.5" />
+    <PackageReference Include="Microsoft.ML.AutoML" Version="0.17.5" />
+    <PackageReference Include="Microsoft.ML.FastTree" Version="1.5.5" />
+    <PackageReference Include="Microsoft.ML.LightGbm" Version="1.5.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Dataset\arcene_test.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Dataset\arcene_train_labeled.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Dataset\arcene_valid_labeled.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

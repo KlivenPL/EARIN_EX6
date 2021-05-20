@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "EARIN_EX6": {
+      "commandName": "Project",
+      "commandLineArgs": "-d -p DataSet\\\\arcene_test.txt -a auto"
+    }
+  }
+}
