@@ -15,7 +15,7 @@ Given [dataset](https://archive.ics.uci.edu/ml/datasets/Arcene) consisted of fol
 *	```arcene_train.labels``` – which contained labels (results) for arcene_train data
 *	```arcene_valid.data``` – which contained test data for neural network. 
 *	```arcene_valid.labels``` – which contained labels (results) for arcene_valid data
-We merged .data datasets with .labels results in a way, that first column of newly created set contained the label (result) while the rest contained mass-spectrometric data. Finally we obtained:
+We merged .data datasets with .labels results in a way, that first column of newly created set contained the label (result) while the rest contained mass-spectrometric data.   Finally we obtained:
 *	```arcene_train_labeled.txt``` – complete train set for neural network
 *	```arcene_valid_labeled.txt``` – complete validation set for neural network.
 Both described above sets consist of 10001 columns (result + mass-spectrometric data) and 100 rows (particular spectrograms)
